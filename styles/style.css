@@ -35,7 +35,7 @@ body * {
 }
 
 body {
-  font-family: Inter, sans-serif;
+  height: 100vh;
   background: var(--bg-url) no-repeat top center / cover;
 
   /* background-image: url('../img/bg-mobile.jpg');
@@ -167,4 +167,15 @@ footer {
   padding: 24px 0;
   font-size: 14px;
   text-align: center;
+}
+
+/* Media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url('../img/bg-desktop.jpg');
+  }
+
+  .light {
+    --bg-url: url('../img/bg-desktop-light.jpg');
+  }
 }
